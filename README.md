@@ -1,10 +1,11 @@
 # 🚀 Proyecto ASO - Simulación de Contratación de Tarjetas de Crédito
 
 📌 Descripción del Proyecto
-Este proyecto consiste en la implementación de una API REST para gestionar simulaciones de contrataciones de tarjetas de crédito en un contexto bancario. La API acepta peticiones POST con datos en formato JSON y realiza validaciones específicas sobre los datos de entrada antes de generar una respuesta.
+Este proyecto consiste en la implementación de una API REST para gestionar simulaciones de contrataciones de tarjetas de crédito en un contexto bancario. La API acepta peticiones **POST** con datos en formato **JSON** y realiza validaciones específicas sobre los datos de entrada antes de generar una respuesta.
 
 ---
 **🛠 Tecnologías Utilizadas**
+
 - ☕ Java: Lenguaje de programación principal.
 
 - 🛡 ASO: Arquitectura de Servicios Orientados.
@@ -65,24 +66,50 @@ Ejemplo con QueryParam:
 **🚀 Instalación y Ejecución**
 
 - 📥 Clonar el Repositorio:
+  ```bash git clone https://github.com/tu-usuario/tu-repositorio.git```
 
 - 🐳 Ejecutar con Docker:asoContainer
+  ```docker run -d --name asoContainer -p 7500:7500 tu-imagen```
 
 ---
+
+**📂  Revisar los archivos generados**
+Al realizar el desarrollo del codigo en Intelijji y después de hacer un clean install se deven de verificar los siguientes archivos para realizar el despliegue con ASO-CLI:
+
+- helloWorld.jar
+- helloWorld-1.1.0-facade.jar
+- helloWorld-sn.jar
+
+Asegúrate de que Docker está corriendo antes de ejecutar los siguientes comandos.
+
+1. Abre la terminal (CMD) en la carpeta donde están los .jar.
+2. Mueve los .jar en la consola con el siguiente comando:
+        ```aso-cli deploy```
+   
+Si todo funciona correctamente, el servicio debería estar desplegado y listo para ser utilizado. Como se muestra:
+
+![jaresmovidos](https://github.com/Jazmin-25/IslasJazmin_pruebatecAso/blob/main/movimiento%20de%20jares%20en%20consola.png)
+
+---
+
 **🔬 Pruebas**
 
 Puedes probar la API utilizando Postman o cualquier otra herramienta de pruebas de API. Asegúrate de que el servidor esté corriendo en http://localhost:7500.
 
 **📌 Ejemplo de Request**
+El siguiente json se debe colocar en POSTMAN
 
+Se realizan pruebas en POSTMAN
 ![ejemplo de request](https://github.com/Jazmin-25/IslasJazmin_pruebatecAso/blob/main/ejemplo%20de%20request%20ASO.png)
 
 ---
 
 **📌 Ejemplo de Response**
+Es el resultado esperado en las pruebas en postman
+![resultado esperado](https://github.com/Jazmin-25/IslasJazmin_pruebatecAso/blob/main/jsonrespuestaejemp.png)
+
+**⚠️Resultado de mi prueba** Se realiza pruebas en mi disposito sin éxito.
 
 ![ejemplo de response](https://github.com/Jazmin-25/IslasJazmin_pruebatecAso/blob/main/response%20error%20404.png)
 
-Se revisa el json y se realizan diferentes modificaciones, al igual que a la url. Sin embargo en todas las pruebas aparece un 404 Not Found :(
-
----
+Se revisa el json y se realizan diferentes modificaciones. De igual forma se realizan diferente modificaciones a la url. Sin embargo en todas las pruebas aparece un 404 Not Found :(
