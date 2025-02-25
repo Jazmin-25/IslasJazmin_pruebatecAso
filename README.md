@@ -75,8 +75,14 @@ Puedes probar la API utilizando Postman o cualquier otra herramienta de pruebas 
 
 **📌 Ejemplo de Request**
 
+![ejemplo de request](https://github.com/Jazmin-25/IslasJazmin_pruebatecAso/blob/main/ejemplo%20de%20request%20ASO.png)
+
 ---
 
 **📌 Ejemplo de Response**
+
+![ejemplo de response](https://github.com/Jazmin-25/IslasJazmin_pruebatecAso/blob/main/response%20error%20404.png)
+
+Se revisa el json y se realizan diferentes modificaciones, al igual que a la url. Sin embargo en todas las pruebas aparece un 404 Not Found :(
 
 ---
