@@ -1,0 +1,3620 @@
+{
+	"info": {
+		"_postman_id": "ebcc1038-a3e5-4840-b6c3-f58e8dbcbd25",
+		"name": "asoexample_first_service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "more-annotations",
+			"description": null,
+			"item": [
+				{
+					"name": "More Annotations - GenerateIdOp - Out",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"helloOperationIdOut"
+							]
+						},
+						"description": "Example to apply @GenerateIdOp to a member instance of the output DTO"
+					},
+					"response": [
+						{
+							"id": "34b84131-0b5c-4d2f-8608-9a55042d8df3",
+							"name": "More Annotations - GenerateIdOp - Out - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdOut",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloOperationIdOut"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:58:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8602c3c4-9725-42f7-ab8f-041abbccecef"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\n    },\n    \"messages\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "More Annotations - GenerateIdOp - In",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"helloOperationIdIn"
+							]
+						},
+						"description": "Example to apply @GenerateIdOp to a member instance of the input DTO"
+					},
+					"response": [
+						{
+							"id": "8a73d9b5-cb5c-4720-bd20-3f1c3db5c71c",
+							"name": "More Annotations - GenerateIdOp In - OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"operationId\": \"fvwMjKeGu6fTR_XkLXz0tsGqxo4nBjnG5eSSHabY_z1GZxbd87G4hA-GB_ejRqdGmpZLCFmHDmup0fkT92k90Pqk27xQdJnJDSzAdSPi1ko\"\r\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloOperationIdIn",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloOperationIdIn"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 09:06:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "f76f8622-78b9-44d8-b330-18e0b90fdec4"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"AA990019-078757339ABB99ES0182002000000000500000000288900386XXXXXXXXXCC99\"\n    },\n    \"messages\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "crypto-operations",
+			"description": null,
+			"item": [
+				{
+					"name": "Crypto Annotations - Encrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\":\"Hello\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCypher",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"helloCypher"
+							]
+						},
+						"description": "Example to encrypt a member instance of the output DTO by @SecurityFunction"
+					},
+					"response": [
+						{
+							"id": "fde209b4-505e-404a-86a5-e280fae5a543",
+							"name": "Crypto Annotations - Encrypt - OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"message\":\"Hello\"\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCypher",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloCypher"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:53:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "81a9055b-09a2-4832-a33c-c4f48a9159b8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"iexPnDflUD8\"\n    },\n    \"messages\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Crypto Annotations - Decrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecypher",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"helloDecypher"
+							]
+						},
+						"description": "Example to decrypt a member instance of the input DTO by @SecurityFunction"
+					},
+					"response": [
+						{
+							"id": "a329d06f-46d6-4121-ad9a-961dc4237084",
+							"name": "Crypto Annotations - Decrypt - OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecypher",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloDecypher"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:53:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "98841789-1d55-494b-8518-61e4917af793"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"Hello\"\n    },\n    \"messages\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Crypto Annotations - Obfuscate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"message\":\"hello\",\n\t\"phone\": \"666555444\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloObfuscate",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"helloObfuscate"
+							]
+						},
+						"description": "Example to obfuscater member instances of the input DTO by @SecurityFunction and @FunctionalType"
+					},
+					"response": [
+						{
+							"id": "9f077b12-373a-44ea-86aa-9c0ce27987b5",
+							"name": "Crypto Annotations - Decrypt - OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"message\":\"iexPnDflUD8\"\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloDecypher",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloDecypher"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:53:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "98841789-1d55-494b-8518-61e4917af793"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"Hello\"\n    },\n    \"messages\": []\n}"
+						},
+						{
+							"id": "1a51e7f8-b491-4e53-ad95-6c63d5a1a569",
+							"name": "Crypto Annotations - Obfuscate",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": false
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"message\":\"hello\",\n\t\"phone\": \"666555444\"\n}"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloObfuscate",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloObfuscate"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age, BCS-Device-Id, BCS-Device-OS-Name, BCS-Device-Model-Name, BCS-Device-Model-Manufacturer, BCS-Device-Screen-Size, BCS-Device-OS-Version, BCS-Device-DPI, BCS-Device-App-Name, BCS-Device-App-Version, Third-Party-Application-Id, ECS-Signature-Platform-Use-Case, BCS-Process-Code",
+									"name": "Access-Control-Allow-Headers",
+									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"name": "Access-Control-Allow-Origin",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age, BCS-Device-Id, BCS-Device-OS-Name, BCS-Device-Model-Name, BCS-Device-Model-Manufacturer, BCS-Device-Screen-Size, BCS-Device-OS-Version, BCS-Device-DPI, BCS-Device-App-Name, BCS-Device-App-Version, Third-Party-Application-Id, ECS-Signature-Platform-Use-Case, BCS-Process-Code",
+									"name": "Access-Control-Expose-Headers",
+									"description": "Lets a server whitelist headers that browsers are allowed to access."
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate",
+									"name": "Cache-Control",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'",
+									"name": "Content-Security-Policy",
+									"description": "Custom header"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Aug 2020 10:18:12 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Expires",
+									"value": "-1",
+									"name": "Expires",
+									"description": "Gives the date/time after which the response is considered stale"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache",
+									"name": "Pragma",
+									"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin",
+									"name": "Referrer-Policy",
+									"description": "Custom header"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains",
+									"name": "Strict-Transport-Security",
+									"description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff",
+									"name": "X-Content-Type-Options",
+									"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin",
+									"name": "X-Frame-Options",
+									"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block",
+									"name": "X-XSS-Protection",
+									"description": "Cross-site scripting (XSS) filter"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "45a9e6da-c6b7-4a3e-abdc-007661ece53d",
+									"name": "consumerrequestid",
+									"description": "Custom header"
+								},
+								{
+									"key": "tsec",
+									"value": "EXjdakdjsd9384dajdXXXC1dE",
+									"name": "tsec",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 04:14:07 GMT+0100 (CET)",
+									"httpOnly": false,
+									"domain": "localhost",
+									"path": "/TechArchitecture",
+									"secure": false,
+									"value": "7B3E6436E0148F4E65D53B343C60CB06.bba490e4b2a8",
+									"key": "JSESSIONID"
+								},
+								{
+									"expires": "Tue Jan 19 2038 04:14:07 GMT+0100 (CET)",
+									"httpOnly": false,
+									"domain": "localhost",
+									"path": "/Proxies",
+									"secure": false,
+									"value": "7B3E6436E0148F4E65D53B343C60CB06.10fe07d06b9f",
+									"key": "JSESSIONID"
+								},
+								{
+									"expires": "Tue Jan 19 2038 04:14:07 GMT+0100 (CET)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/",
+									"secure": false,
+									"value": "7B3E6436E0148F4E65D53B343C60CB06",
+									"key": "JSESSIONID"
+								},
+								{
+									"expires": "Tue Jan 19 2038 04:14:07 GMT+0100 (CET)",
+									"httpOnly": false,
+									"domain": "localhost",
+									"path": "/",
+									"secure": false,
+									"value": "2",
+									"key": "BCSI-CS-5a3d5ad6091a7293"
+								}
+							],
+							"body": "{\"data\":{\"phone\":\"66655****\",\"message\":\"****...5\"}}"
+						}
+					]
+				},
+				{
+					"name": "CryptoConnector",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"helloCrypto"
+							]
+						},
+						"description": "Example to encrypt two Strings by CryptoConnector"
+					},
+					"response": [
+						{
+							"id": "57f90807-cd2d-4beb-b47a-68de47d87bd1",
+							"name": "CryptoConnector - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/helloCrypto",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"helloCrypto"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid"
+								},
+								{
+									"key": "date",
+									"value": "Mon, 25 Feb 2019 08:28:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "2910d5aa-a661-44cd-be4f-7afc6119e1ec"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"messages\": [\n            \"iexPnDflUD8\",\n            \"SVFH0PWxub8\"\n        ]\n    },\n    \"messages\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "backend-operations",
+			"description": null,
+			"item": [
+				{
+					"name": "RESTful APX Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/apx_decorator",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"apx_decorator"
+							]
+						},
+						"description": "Example of use of an sync apx transaction"
+					},
+					"response": []
+				},
+				{
+					"name": "mainframe-transactions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/userinfo/E049629",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7500",
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"userinfo",
+								"E049629"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RestLess-APX-Transaction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\": \"Hello World\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/echo",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"echo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "imc-controls",
+			"description": null,
+			"item": [
+				{
+					"name": "Service Utilities IMC",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"simple_user"
+							]
+						},
+						"description": "Example of use of Service Utilities interface"
+					},
+					"response": [
+						{
+							"id": "e8c00adb-99e9-4bb0-bcc1-07d5b273fc36",
+							"name": "Service Utilities IMC - OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/simple_user",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"hello",
+										"simple_user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
+									"name": "Access-Control-Allow-Headers",
+									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"name": "Access-Control-Allow-Origin",
+									"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction",
+									"name": "Access-Control-Expose-Headers",
+									"description": "Lets a server whitelist headers that browsers are allowed to access."
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"name": "Connection",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 23 Jan 2019 14:02:32 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "Via",
+									"value": "1.1 INV02593 (squid/3.5.27)",
+									"name": "Via",
+									"description": "Informs the client of proxies through which the response was sent."
+								},
+								{
+									"key": "X-Cache",
+									"value": "MISS from INV02593",
+									"name": "X-Cache",
+									"description": "Custom header"
+								},
+								{
+									"key": "X-Cache-Lookup",
+									"value": "MISS from INV02593:4444",
+									"name": "X-Cache-Lookup",
+									"description": "Custom header"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "0e1a4c9e-6352-49f2-9cc4-d1a73107e69e",
+									"name": "consumerrequestid",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"body": "{\"messages\":[],\"data\":{\"id\":\"DUMMY\"}}"
+						}
+					]
+				},
+				{
+					"name": "helloImc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"userCode\" : \"U01\",\r\n\"contractCode\"  : \"C01\",\r\n\"amount\" : 2000\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/helloimc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7500",
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"helloimc"
+							]
+						},
+						"description": "Used by \nparsing-functional-info"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "working-with-headers",
+			"description": null,
+			"item": [
+				{
+					"name": "Working with headers - Allowed header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dbf4337c-1ad9-4c93-8bc4-2abec274fc21",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Content-Location\", function () {",
+									"    pm.response.to.have.header(\"Content-Location\");",
+									"       pm.response.to.be.header(\"Content-Location\", \"Should show allowed header\");",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_allowed",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"header_allowed"
+							]
+						},
+						"description": "Make request setting a header which is allowed"
+					},
+					"response": []
+				},
+				{
+					"name": "Working with headers - Now allowed header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8596b445-13eb-4f29-a693-3677d90bef0b",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Custom-Header not exists\", function () {",
+									"    pm.response.to.not.have.header(\"Custom-Header\");",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_not_allowed",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"header_not_allowed"
+							]
+						},
+						"description": "Try to add a not allowed header"
+					},
+					"response": []
+				},
+				{
+					"name": "Working with headers - Location header",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d5ebcbaf-a1c4-4a7d-aea2-9d675ad91171",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Location header\", function () {",
+									"    pm.response.to.have.header(\"Location\");",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/header_location",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"header_location"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "service-constraints",
+			"description": null,
+			"item": [
+				{
+					"name": "Service Constraints - No constrains",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a18bf147-cc0b-4f1f-9f87-c8484cd656e8",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"This is a greeting\");",
+									"",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Request to a DTO without constraints"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - Valid @NotNull",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "619d1a19-1b16-4ab8-8248-26120696351a",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Input as greeting\");",
+									"});",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"Input as greeting\"\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Valid request with not-null attribute"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - Invalid @NotNull",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6f634930-aafd-4305-ba40-94a5f0d61790",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"message\" : \"Input as greeting\",\n\t\"read\": false\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Invalid request with null attribute"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - @NotEmpty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "29e9704e-b87f-489f-8636-660eb6c25179",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"\",\t\n\t\"read\": false\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Invalid request to test @NotEmpty"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - @Size",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "86633d8b-631e-4132-97a5-f6e73493ce65",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312,\n    \"message\" : \"I have so much to say that could not fit in this message ! \",\n    \"read\": false\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetings",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Invalid request to test @Size"
+					},
+					"response": []
+				},
+				{
+					"name": "Service Constraints - Constraint in params",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0858487c-a98c-4319-8d51-30cdc69cec96",
+								"exec": [
+									"pm.test(\"Validation error\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.messages[0].code).to.eql(\"errorValidationInput\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"id\": 12312,\n\t\"message\" : \"asdf\",\t\n\t\"read\": false\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/greetingsWithParams/5?message=adios",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetingsWithParams",
+								"5"
+							],
+							"query": [
+								{
+									"key": "message",
+									"value": "adios"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "default-operations",
+			"description": null,
+			"item": [
+				{
+					"name": "Arch. Default Operations - Basic ServiceResponse",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1755045e-be98-4bc1-953d-1112c58ab0bd",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Hello World!\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello"
+							]
+						},
+						"description": "Basic ServiceResponse response"
+					},
+					"response": []
+				},
+				{
+					"name": "Arch. Default Operations - Basic ServiceResponse POST",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "60698be1-a36c-4d37-965a-1be4250d8034",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Create a greeting ! Hello !\");",
+									"});",
+									"",
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"messages\": [],\n  \"data\": {\n    \"message\" : \"Create a greeting ! Hello !\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello"
+							]
+						},
+						"description": "Basic ServiceResponse response POST method"
+					},
+					"response": []
+				},
+				{
+					"name": "Arch. Default Operations - Strict catalog",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3b1c775a-e138-4d6c-a790-ee8ded22f6af",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/integer",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"integer"
+							]
+						},
+						"description": "Throws strict catalog exception if enabled.\nIf not, response is a integer with value 100."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "overriding-service-response",
+			"description": null,
+			"item": [
+				{
+					"name": "Overriding ServiceResponse - ServiceResponseCreated",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "95f3f309-bbda-4c0e-8753-ff5161863d79",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/create",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"create"
+							]
+						},
+						"description": "Use of ServiceResponseCreated"
+					},
+					"response": []
+				},
+				{
+					"name": "Overriding ServiceResponse - ServiceResponseNoContent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cee82b84-b6cf-4851-ad69-53cae8a96409",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/nocontent",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"nocontent"
+							]
+						},
+						"description": "Use of ServiceResponseNoContent"
+					},
+					"response": []
+				},
+				{
+					"name": "Overriding ServiceResponse - ServiceResponseCreatedWithNoContent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8bf32fa8-5414-4ace-922e-2d4051e33fe1",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {",
+									"    pm.response.to.have.status(201);",
+									"});",
+									"",
+									"pm.test(\"Location header\", function () {",
+									"    pm.response.to.have.header(\"Location\");",
+									"});",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/created_nocontent",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"created_nocontent"
+							]
+						},
+						"description": "Use of ServiceResponseCreatedWithNoContent"
+					},
+					"response": []
+				},
+				{
+					"name": "Overriding ServiceResponse - ServiceResponseOK",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2a5b0e90-fb4c-42ef-a3e0-ba7a83e56f6c",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Response message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"This object exists before this request\");",
+									"});",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/sendHello",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"sendHello"
+							]
+						},
+						"description": "Use of ServiceResponseOK"
+					},
+					"response": []
+				},
+				{
+					"name": "Overriding ServiceResponse - ServiceResponseAccepted",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d05af7d5-eaba-433a-9954-0ef32365a457",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Response message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Action processing. Check status here -> http://example.org/processX/status\");",
+									"});",
+									"",
+									"pm.test(\"Status code is 202\", function () {",
+									"    pm.response.to.have.status(202);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/accepted",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"accepted"
+							]
+						},
+						"description": "Use of ServiceResponseAccepted"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "slice-service-deployment",
+			"description": null,
+			"item": [
+				{
+					"name": "Slice Deplyment - First Service Hello",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "56e2b185-af8e-41dc-ac16-e64d9dd24d3a",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Hello World!\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Slice Deplyment - Friends Service Hello",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5f3e8cbb-d3b9-4d31-a89e-572d6f9a5b51",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Hello to all my friends! Whats up ?!\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/friends",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"friends"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Slice Deplyment - Friends Service Hello (param)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7fc9dfcd-48ec-4135-90f4-9ec121cbf9f5",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Hello to my friend Jose, id 1\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/friends/1",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"friends",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Slice Deplyment - Clients Service Hello",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8fd2172d-8aa8-4475-86cc-f485739bc2d6",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Hello. This should be a polite message to all clients of my business\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/clients/",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"clients",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Slice Deplyment - Clients Service Hello (param)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7a75ef23-7dd4-4fda-ac9b-5dadbfdff8ad",
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Greeting message\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.data.message).to.eql(\"Hello. This should be a personalized message to client 1\");",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/hello/clients/1",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello",
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "aso-first-example",
+			"description": null,
+			"item": [
+				{
+					"name": "aso-first-example - helloWorld",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/hello",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7500",
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"hello"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "helloWorld greetings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/greetings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7500",
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"greetings"
+							]
+						},
+						"description": "Used by\nvalidating-service-constraints\ncreate-first-routine\nmultioperative-services\nslice_service_deployment"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "annotations",
+			"description": null,
+			"item": [
+				{
+					"name": "Annotations - dto hierarchy with jackson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n      \"type\":\"subtype1\",\n      \"field1\":\"laika\",\n      \"field2\":\"15\",\n      \"field3\":\"yomismo\"\n }\n"
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/jacksonTest",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"jacksonTest"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "9e8f8e5b-496c-4957-9f85-f7b01341b268",
+							"name": "Annotations - dto hierarchy with jackson OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \n      \"type\":\"subtype1\",\n      \"field1\":\"laika\",\n      \"field2\":\"15\",\n      \"field3\":\"yomismo\"\n }\n"
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/jacksonTest",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"jacksonTest"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "date",
+									"value": "Wed, 20 Mar 2019 10:15:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "10a41d0d-c219-45f4-a8de-bc35f5ce56a5"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"type\": \"subtype2\",\n        \"field1\": \"The serialized type class of the input DTO is: class com.bbva.uuaa.helloWorld.facade.v0.dto.DtoSub1\",\n        \"field2\": 100,\n        \"field4\": \"The type class of the output DTO to deserialize is : class com.bbva.uuaa.helloWorld.facade.v0.dto.DtoSub2\"\n    },\n    \"messages\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ws-interceptor",
+			"description": null,
+			"item": [
+				{
+					"name": "ws-interceptor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rest-connector",
+			"description": "Examples of request to services that use different types of Rest Connector",
+			"item": [
+				{
+					"name": "kernel connector request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/invokeKernelRestService",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"invokeKernelRestService"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "8ea17226-249a-4914-990d-39aa5a403d6f",
+							"name": "kernel connector request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/invokeKernelRestService",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"invokeKernelRestService"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "date",
+									"value": "Tue, 23 Apr 2019 11:07:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "fe349ec6-1d10-47ac-ba8c-f84b0a222725"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messages\": [],\n    \"data\": \"{\\\"accessToken\\\":\\\"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCIsIng1dSI6Imh0dHBzOi8vcG9ydHVudXMuc21sYi5zZWNhYXMtd29yay1lcy0wMS5leHQuZXMuaWFhcy5pZ3J1cG9iYnZhL3YxL2NlcnQvMTUzNjkxMzMxODQ5MjA3MDkyNCJ9.eyJlY3NNZXRhIjp7InRzZWMiOnsiYXBwIjoiMDAwMDAwMSIsImxhYmVscyI6W3sibGFiZWwiOiJhYWEiLCJ0dGwiOjEyMzQ1NTY2fV19fSwiYmNzVXNlcklkIjoiaWRVc2VyLTEyMzQiLCJiY3NBcHBEYXRhIjoiYWFwRGF0YUNvbnRlbnQiLCJhdWQiOiJTRU1hYVMiLCJleHAiOjE1NTYwMTgyNzcsImp0aSI6ImUwZDRkZDUxLTBhYjctNGJkMy05Nzg3LTIwYWM2MzAzZTE3NSIsImlhdCI6MTU1NjAxNzY3NywiaXNzIjoiU0VDYWFTIiwibmJmIjoxNTU2MDE3NjcyLCJzdWIiOiJTTUMwMDAwMDFAQVNPLkVDUyJ9.RKl9VOKfEophg2-eznTH9551sNNQExU7kTrzzDgg8JsdueWK3yUyZLliiwxAIfPIRdMDTbc7WaohCBLRg5_Q2WbMacT6bbIKT8GRVJCIwI5ON_JHVVWf3TY1rY34j8Ip8ZVH--byremz2ZPKNelvN7Lt8R38qPi4el-QPrSzNESQBD3ME99t_NIoxxjcDCKNc2qkOd6JXX6VAR0CuEQH1gfshvlUrAYmKNJxuGIK2nPb17zy5aqL1sbae9WPk7eNjXE3pMFRDZZaKfWjIarS6mkm9tv3b16JZqX_BG5dY8G0mLGKMTkVBrrJIU-3NN4bF5oXPOsSw6W73iBWf7zgfQ\\\",\\\"expiresAt\\\":1556018277}\"\n}"
+						}
+					]
+				},
+				{
+					"name": "JWT connector request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/invokeJwtRestService",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"invokeJwtRestService"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "security-utilities",
+			"description": null,
+			"item": [
+				{
+					"name": "Use JwtUtils to obtain a JWT token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"data\":\"{\\\"field1\\\":{\\\"aap\\\": \\\"0000001\\\", \\\"labels\\\": [{\\\"label\\\": \\\"aaa\\\",\\\"ttl\\\":12345566}]}}\",\n  \"audience\":\"SEMaaS\", \n  \"obfuscationMask\":[\"ttl\",\"aap\"]\n}"
+						},
+						"url": {
+							"raw": "{{entornolocal}}/TechArchitecture/helloWorld/v0/obtainJWT",
+							"host": [
+								"{{entornolocal}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"obtainJWT"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "9715153f-a80a-4337-8554-c99fd18277c8",
+							"name": "Use JwtUtils to obtain a JWT token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"data\":\"{\\\"field1\\\":{\\\"aap\\\": \\\"0000001\\\", \\\"labels\\\": [{\\\"label\\\": \\\"aaa\\\",\\\"ttl\\\":12345566}]}}\",\n  \"audience\":\"SEMaaS\", \n  \"obfuscationMask\":[\"ttl\",\"aap\"]\n}"
+								},
+								"url": {
+									"raw": "{{entornolocal}}/TechArchitecture/helloWorld/v0/obtainJWT",
+									"host": [
+										"{{entornolocal}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"obtainJWT"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "date",
+									"value": "Wed, 08 May 2019 13:36:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "f3c31165-d931-4fd8-be4f-fe4b618d8e00"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"messages\": [],\n    \"data\": {\n        \"expiresAt\": 1557323165,\n        \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IkNOPUV0aGVyIFIzIEVTIElzc3VpbmcgQ0EsT1U9U2VjdXJpdHkgQXJjaGl0ZWN0dXJlIENyeXB0b2dyYXBoeSxPPUJCVkEsQz1FUzo6MTUzNjkxMzMxODQ5MjA3MDkyNCIsInR5cCI6IkpXVCIsIng1dSI6Imh0dHBzOi8vcG9ydHVudXMuc21sYi5zZWNhYXMtd29yay1lcy0wMS5leHQuZXMuaWFhcy5pZ3J1cG9iYnZhL3YxL2NlcnQvMTUzNjkxMzMxODQ5MjA3MDkyNCJ9.eyJlY3NNZXRhIjp7ImFhcCI6Ijk5OTk5OTk5In0sImJjc1VzZXJJZCI6InVzZXIiLCJiY3NBcHBEYXRhIjoie1wiZmllbGQxXCI6e1wiYWFwXCI6IFwiMDAwMDAwMVwiLCBcImxhYmVsc1wiOiBbe1wibGFiZWxcIjogXCJhYWFcIixcInR0bFwiOjEyMzQ1NTY2fV19fSIsImF1ZCI6IlNFTWFhUyIsImV4cCI6MTU1NzMyMzE2NSwianRpIjoiZDJmYmU3MjEtYTU4ZS00YjFhLTk1YjQtYTczMDUzZWNjZGYxIiwiaWF0IjoxNTU3MzIyNTY1LCJpc3MiOiJTRUNhYVMiLCJuYmYiOjE1NTczMjI1NjAsInN1YiI6IlNNQzAwMDAwMUBBU08uRUNTIn0.rXh5yw6Wbsw_qQoZx9fmf8ZA65x6KoCj2NfQ01RLPgJNpTzV6oz9eCtmLu3LoLs4xKRspWZRtpLzQm_BGC8N-V0IPsD1cQrmg9HYKrUNQZfQqZJbmz48y7d3ys7ZUGiXyLuvCf1aIFrxLxiwxrd-tNDogQ9h-66-ROsETeFwuf_Cqx0pSPIi62Eqp22oNhLZS4uIKFmDKww9s_NMy3M2raQp13lm_fJbLtOZOOtI2sYqn6ySzk2ikfQkD256Tw8ZXIF358t9xPAKGgI1w2f8dvZtV3ZE66cehlXby-bKQTuaI8VdPVzf-jRTQnG_7YDJmY2Lb0Vd4tzyfoNkNcv0rg\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"description": null,
+			"item": [
+				{
+					"name": "pagination query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=5&pageSize=6",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"getList",
+								"p1",
+								"p2"
+							],
+							"query": [
+								{
+									"key": "paginationKey",
+									"value": "5"
+								},
+								{
+									"key": "pageSize",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "fa2a49d1-cd6b-4b79-957d-ee368b63057f",
+							"name": "pagination query",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=5&pageSize=6",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"getList",
+										"p1",
+										"p2"
+									],
+									"query": [
+										{
+											"key": "paginationKey",
+											"value": "5"
+										},
+										{
+											"key": "pageSize",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 Aug 2019 07:32:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "c404b86c-d7e6-4e9a-90f1-475018b88583"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"strData\": \"data30\",\n            \"intData\": 30\n        },\n        {\n            \"strData\": \"data31\",\n            \"intData\": 31\n        },\n        {\n            \"strData\": \"data32\",\n            \"intData\": 32\n        },\n        {\n            \"strData\": \"data33\",\n            \"intData\": 33\n        },\n        {\n            \"strData\": \"data34\",\n            \"intData\": 34\n        },\n        {\n            \"strData\": \"data35\",\n            \"intData\": 35\n        }\n    ],\n    \"pagination\": {\n        \"links\": {\n            \"first\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2\",\n            \"last\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=LAST\",\n            \"previous\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=4&pageSize=6\",\n            \"next\": \"/TechArchitecture/helloWorld/v0/getList/p1/p2?paginationKey=6&pageSize=6\"\n        },\n        \"page\": 5,\n        \"totalPages\": 166,\n        \"totalElements\": 1000,\n        \"pageSize\": 6\n    },\n    \"messages\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "resource-links",
+			"description": null,
+			"item": [
+				{
+					"name": "Generation of basic links to resources",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"createUserQueryParams",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "287dffde-8cd6-41fb-84ab-4877ae56b319",
+							"name": "Generation of several links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUserQueryParams",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8bcb1aab-607a-4b08-a08f-cc2e418ba102"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute to 'userMessages' sub-resource must be /userMessages?id123&username=myExampleUsername\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUserQueryParams/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"title\": \"User message list with query params\",\n                \"href\": \"/userMessages?id=123&username=myExampleUsername\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"title\": \"User message list with path params\",\n                \"href\": \"/user/123/messages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"href\": \"/user/123/do-not-use-only-example-link\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						},
+						{
+							"id": "e12bd098-e743-42a2-a7fd-4039492a2b7a",
+							"name": "Generation of basic links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUser/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUser",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:34:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "95782063-3215-4bf2-9e80-561c9a0c764f"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute must be /userMessages\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUser/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"href\": \"/userMessages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Generation of several links to resources",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"createUserQueryParams",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "2b03f5d0-9857-4867-b530-052fbd7a42bb",
+							"name": "Generation of several links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUserQueryParams",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8bcb1aab-607a-4b08-a08f-cc2e418ba102"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute to 'userMessages' sub-resource must be /userMessages?id123&username=myExampleUsername\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUserQueryParams/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"title\": \"User message list with query params\",\n                \"href\": \"/userMessages?id=123&username=myExampleUsername\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"title\": \"User message list with path params\",\n                \"href\": \"/user/123/messages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"href\": \"/user/123/do-not-use-only-example-link\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Example of returned link of service \"createUserQueryParams\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{env}}/TechArchitecture/helloWorld/v0/user/123/messages",
+							"host": [
+								"{{env}}"
+							],
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"user",
+								"123",
+								"messages"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "7241f231-5e45-45e2-8623-efee08ed69d9",
+							"name": "Example of returned link of service \"createUserQueryParams\"",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/user/123/messages",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"user",
+										"123",
+										"messages"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:36:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "d56618cb-1c5e-479e-b254-c69fe727c785"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": [\n            \"Message 1\",\n            \"Message 2\"\n        ],\n        \"links\": [\n            {\n                \"href\": \"/v0/user/123/messages\",\n                \"rel\": \"self\"\n            },\n            {\n                \"href\": \"/listMessages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						},
+						{
+							"id": "71a9a48d-5517-4150-9542-6ae884375361",
+							"name": "Generation of several links to resources",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{env}}/TechArchitecture/helloWorld/v0/createUserQueryParams/123",
+									"host": [
+										"{{env}}"
+									],
+									"path": [
+										"TechArchitecture",
+										"helloWorld",
+										"v0",
+										"createUserQueryParams",
+										"123"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache,no-store,must-revalidate"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "script-src 'self'"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 24 Oct 2019 14:32:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT, OPTIONS, PATCH"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Accept, Content-Type, tsec, consumerrequestid, authenticationchallenge, authenticationtype, authenticationdata, authenticationstate, contactid, consumeruuid, consumerapplicationid, perimetertsec, authorization, responsewarningcode, responsewarningdescription, cuf, prefer, phoneNumber, Location, X-RHO-PARENTSPANID, X-RHO-TRACEID, preferredauthenticationtype, X-HTTP-Method-Override, Access-Control-Allow-Methods, iv-remote-address, thirdparty-x-forwarded-for, thirdparty-user-agent, thirdparty-geolocation, thirdparty-calculated-scoring, thirdparty-deviceid, vnd.bbva.security-client-certificate, order-preferredaction, authenticationresponse, Access-Control-Max-Age"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "consumerrequestid",
+									"value": "8bcb1aab-607a-4b08-a08f-cc2e418ba102"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"data\": \"Links with new catalog format. href attribute to 'userMessages' sub-resource must be /userMessages?id123&username=myExampleUsername\",\n        \"links\": [\n            {\n                \"href\": \"/v0/createUserQueryParams/123\",\n                \"rel\": \"self\"\n            },\n            {\n                \"title\": \"User message list with query params\",\n                \"href\": \"/userMessages?id=123&username=myExampleUsername\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"title\": \"User message list with path params\",\n                \"href\": \"/user/123/messages\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            },\n            {\n                \"href\": \"/user/123/do-not-use-only-example-link\",\n                \"rel\": \"link\",\n                \"method\": \"GET\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "date and time adapters",
+			"description": null,
+			"item": [
+				{
+					"name": "dateandtimeadapters",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"name\":\"John\",\n   \"shortDate\":\"2015-07-24\",\n    \"date\": \"2620-04-17T14:10:33.456+0200\",\n    \"time\":\"08:05:37\"}"
+						},
+						"url": {
+							"raw": "http://localhost:7500/TechArchitecture/helloWorld/v0/dealingWithDatesAndTimes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7500",
+							"path": [
+								"TechArchitecture",
+								"helloWorld",
+								"v0",
+								"dealingWithDatesAndTimes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ed8dc4c5-a3cf-429f-86ac-aab3fb0681a3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8f7fc49c-2db8-4c79-a137-3159927d2207",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

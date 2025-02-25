@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="CVIDT006" application="CVID" version="01" country="CO" language="ES">
+	<paramsIn>
+		<dto order="1" name="inputParticipants" mandatory="0" package="com.bbva.cvid.dto.simulation.post.Participant" artifactId="CVIDC015">
+			<parameter order="1" name="updateCode" mandatory="0" type="String" size="50"/>
+			<parameter order="2" name="active" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="downId" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="isPricing" mandatory="0" type="Boolean" size="0"/>
+			<parameter order="5" name="nonCustomerId" mandatory="0" type="String" size="60"/>
+			<dto order="6" name="economicData" mandatory="0" package="com.bbva.cvid.dto.simulation.post.EconomicData" artifactId="CVIDC015">
+				<dto order="1" name="economicCondition" mandatory="1" package="com.bbva.cvid.dto.simulation.post.common.IdValue" artifactId="CVIDC015">
+					<parameter order="1" name="id" mandatory="1" type="String" size="50"/>
+				</dto>
+				<parameter order="2" name="sourceIncome" mandatory="0" type="String" size="50"/>
+			</dto>
+			<dto order="7" name="status" mandatory="0" package="com.bbva.cvid.dto.simulation.post.ParticipantStatus" artifactId="CVIDC015">
+				<parameter order="1" name="id" mandatory="1" type="String" size="50"/>
+			</dto>
+			<list order="8" name="addresses" mandatory="0">
+				<dto order="1" name="listAddresses" mandatory="0" package="com.bbva.cvid.dto.simulation.post.Addresses" artifactId="CVIDC015">
+					<dto order="1" name="residence" mandatory="0" package="com.bbva.cvid.dto.simulation.post.Residence" artifactId="CVIDC015">
+						<dto order="1" name="status" mandatory="1" package="com.bbva.cvid.dto.simulation.post.common.IdValue" artifactId="CVIDC015">
+							<parameter order="1" name="id" mandatory="1" type="String" size="50"/>
+						</dto>
+						<dto order="2" name="value" mandatory="1" package="com.bbva.cvid.dto.simulation.post.common.Amount" artifactId="CVIDC015">
+							<parameter order="1" name="amount" mandatory="1" type="Double" size="20"/>
+							<parameter order="2" name="currency" mandatory="0" type="String" size="10"/>
+						</dto>
+						<parameter order="3" name="stratum" mandatory="0" type="String" size="50"/>
+						<parameter order="4" name="yearOfAntiquity" mandatory="1" type="String" size="50"/>
+					</dto>
+					<dto order="2" name="addressesTypeLocation" mandatory="0" package="com.bbva.cvid.dto.simulation.post.common.AdressLocation" artifactId="CVIDC015">
+						<dto order="1" name="country" mandatory="1" package="com.bbva.cvid.dto.simulation.post.common.IdValue" artifactId="CVIDC015">
+							<parameter order="1" name="id" mandatory="1" type="String" size="50"/>
+						</dto>
+						<dto order="2" name="state" mandatory="1" package="com.bbva.cvid.dto.simulation.post.common.IdValue" artifactId="CVIDC015">
+							<parameter order="1" name="id" mandatory="1" type="String" size="50"/>
+						</dto>
+						<dto order="3" name="city" mandatory="1" package="com.bbva.cvid.dto.simulation.post.common.IdValue" artifactId="CVIDC015">
+							<parameter order="1" name="id" mandatory="1" type="String" size="50"/>
+						</dto>
+					</dto>
+					<dto order="3" name="addressType" mandatory="1" package="com.bbva.cvid.dto.simulation.post.AddressTypeId" artifactId="CVIDC015">
+						<parameter order="1" name="id" mandatory="1" type="String" size="100"/>
+					</dto>
+					<dto order="4" name="ownershipType" mandatory="1" package="com.bbva.cvid.dto.simulation.post.OwnershipType" artifactId="CVIDC015">
+						<parameter order="1" name="id" mandatory="1" type="String" size="50"/>
+					</dto>
+				</dto>
+			</list>
+			<parameter order="9" name="id" mandatory="1" type="String" size="100"/>
+		</dto>
+		<dto order="2" name="requestHousing" mandatory="1" package="com.bbva.cvid.dto.simulation.post.common.IdValue" artifactId="CVIDC015">
+			<parameter order="1" name="id" mandatory="1" type="String" size="100"/>
+		</dto>
+	</paramsIn>
+	<paramsOut/>
+	<description>put participants transaction</description>
+</transaction>

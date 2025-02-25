@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns:servicing="http://bbva.com/arq-spring-servicing"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cxf="http://cxf.apache.org/core"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd   
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
+		http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd   
+		http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+		http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+		http://bbva.com/arq-spring-servicing
+		http://bbva.com/arq-spring-servicing/servicing.xsd">
+    <context:spring-configured/>
+    <aop:aspectj-autoproxy/>
+    <context:annotation-config/>
+
+    <!-- Service's Metadata -->
+    <servicing:module-metadata service-logical-id="helloWorld" application-name="uuaa"/>
+
+    <!-- CXF's Beans -->
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+    <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
+    <context:component-scan base-package="com.bbva.uuaa.helloWorld">
+        <context:exclude-filter expression=".*_Roo_.*" type="regex"/>
+        <context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
+    </context:component-scan>
+
+    <!-- CXF's Bus -->
+    <cxf:bus>
+        <cxf:features>
+            <cxf:logging/>
+        </cxf:features>
+    </cxf:bus>
+    <jaxrs:server address="/${sa:logicalIdURLToken}">
+        <jaxrs:providers>
+            <ref bean="businessServiceJAXRSExceptionMapper"/>
+            <ref bean="wadlGenerator"/>
+            <ref bean="jacksonJsonProvider"/>
+            <ref bean="resourceWriter"/>
+            <ref bean="apiWriter"/>
+            <ref bean="restLimitationSize"/>
+        </jaxrs:providers>
+        <jaxrs:serviceBeans>
+            <ref bean="srvHelloWorld"/>
+        </jaxrs:serviceBeans>
+    </jaxrs:server>
+</beans>
